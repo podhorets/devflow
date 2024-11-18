@@ -6,7 +6,6 @@ import { usePathname } from "next/navigation";
 import React from "react";
 
 import { sidebarLinks } from "@/constants";
-import ROUTES from "@/constants/routes";
 import { cn } from "@/lib/utils";
 
 import { SheetClose } from "../../sheet";
@@ -21,7 +20,7 @@ const NavLinks = ({ isMobileNav = false }: { isMobileNav?: boolean }) => {
           (pathname.includes(item.route) && item.route.length > 1) ||
           pathname === item.route;
 
-        if (item.route === ROUTES.PROFILE) {
+        if (item.route === "/profile") {
           if (userId) item.route = `${item.route}/${userId}`;
           else return null;
         }
@@ -47,7 +46,7 @@ const NavLinks = ({ isMobileNav = false }: { isMobileNav?: boolean }) => {
             <p
               className={cn(
                 isActive ? "base-bold" : "base-medium",
-                !isMobileNav && "max-lg: hidden",
+                !isMobileNav && "max-lg:hidden",
               )}
             >
               {item.label}

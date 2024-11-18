@@ -16,7 +16,7 @@ body {
   }
 
   .background-light900_dark200 {
-    @apply bg-light-900 dark:bg-dark-200;
+    @apply bg-light-900 dark:bg-dark-200 !important;
   }
 
   .background-light900_dark300 {
@@ -107,8 +107,8 @@ body {
     @apply text-dark-400 dark:text-light-900 !important;
   }
 
-  .text-light400_light500 {
-    @apply text-light-400 dark:text-light-500 !important;
+  .text-light400_light400 {
+    @apply text-light-400 dark:text-light-400 !important;
   }
 
   .light-border {
