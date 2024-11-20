@@ -7,7 +7,7 @@ import React from "react";
 import ROUTES from "@/constants/routes";
 import { toast } from "@/hooks/use-toast";
 
-import { Button } from "../button";
+import { Button } from "../ui/button";
 
 const SocialAuthForm = () => {
   const buttonClass =

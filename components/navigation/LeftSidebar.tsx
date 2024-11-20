@@ -4,7 +4,7 @@ import React from "react";
 
 import ROUTES from "@/constants/routes";
 
-import { Button } from "../button";
+import { Button } from "../ui/button";
 import NavLinks from "./navbar/NavLinks";
 
 const LeftSidebar = () => {

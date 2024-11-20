@@ -4,7 +4,7 @@ import React from "react";
 import ROUTES from "@/constants/routes";
 import { getDeviconClassName } from "@/lib/utils";
 
-import { Badge } from "../badge";
+import { Badge } from "../ui/badge";
 
 interface Props {
   _id: string;

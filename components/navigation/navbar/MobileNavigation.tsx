@@ -11,7 +11,7 @@ import {
 import ROUTES from "@/constants/routes";
 
 import NavLinks from "./NavLinks";
-import { Button } from "../../button";
+import { Button } from "../../ui/button";
 
 const MobileNavigation = () => {
   return (
