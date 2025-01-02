@@ -2,7 +2,6 @@ import { NextResponse } from "next/server";
 import { RequestError, ValidationError } from "../http-errors";
 import { ZodError } from "zod";
 import logger from "../logger";
-import { log } from "console";
 
 export type ResponseType = "api" | "server";
 
