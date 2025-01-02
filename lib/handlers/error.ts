@@ -25,7 +25,7 @@ const formatResponse = (
     : { status, ...responseContent };
 };
 
-export const handlerError = (
+export const handleError = (
   error: unknown,
   responseType: ResponseType = "server",
 ) => {
