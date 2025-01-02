@@ -2,7 +2,7 @@ import Account from "@/database/account.model";
 import { handleError } from "@/lib/handlers/error";
 import { NotFoundError, ValidationError } from "@/lib/http-errors";
 import dbConnect from "@/lib/mongoose";
-import { AccountSchema, UserSchema } from "@/lib/validations";
+import { AccountSchema } from "@/lib/validations";
 
 import { NextResponse } from "next/server";
 
@@ -63,7 +63,7 @@ export async function PUT(
     const updatedAccount = await Account.findByIdAndUpdate(id, validatedData, {
       new: true,
     });
-    if (!updatedAccount) throw new NotFoundError("User");
+    if (!updatedAccount) throw new NotFoundError("Account");
 
     return NextResponse.json(
       { success: true, data: updatedAccount },
