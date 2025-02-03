@@ -1,4 +1,3 @@
-import { sign } from "crypto";
 import logger from "../logger";
 import { handleError } from "./error";
 import { RequestError } from "../http-errors";
